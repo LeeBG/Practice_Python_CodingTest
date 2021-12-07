@@ -6,7 +6,7 @@ from random import *
 print(5>10)
 print(10>5)
 
-# 숫자 처리 함수
+### 숫자 처리 함수
 print(abs(-5)) #5 절댓값
 print(pow(4,2)) #4의 2제곱
 print(max(5,12)) # 최댓값
@@ -23,7 +23,7 @@ print(sqrt(16)) #제곱근 4
 
 
 
-# 랜덤함수 : 랜덤이라고 하면 그야말로 난수이다.
+### 랜덤함수 : 랜덤이라고 하면 그야말로 난수이다.
 
 print (random()) # random은 0.0 ~ 1.0 사이의 임의의 값을 생성한다.
 print(random()*10) # 0.0에서 10.0 미만의 임의의 값을 생성한다.
@@ -55,7 +55,7 @@ print("오프라인 스터디 모임 날짜는 매월 "+str(studyDate)+"일로 �
 
 
 
-# 문자열
+### 문자열
 
 sentence = '나는 소년입니다.'
 print(sentence)
@@ -69,7 +69,7 @@ sentence3 = """
 print(sentence3)
 
 
-# 슬라이싱
+### 슬라이싱
 # 주민등록번호로 예시
 jumin = "960528-1234567"
 
@@ -81,7 +81,7 @@ print("생년월일 : "+jumin[:6]) # 처음(0)부터 주소 6직전까지
 print("주민 뒤 7자리 : "+jumin[7:]) # 7부터 끝까지
 print("주민 뒤 7자리를 거꾸로 : "+jumin[-7:]) #-7부터 끝까지
 
-#문자열 처리 함수
+### 문자열 처리 함수
 python = "Python is Amazing"
 print(python.lower())
 print(python.upper())
@@ -102,7 +102,8 @@ print("hi")
 print(python.count("n")) # "n"이 python에서 총 몇번 나왔는가
 
 
-#문자열 포맷
+###문자열 포맷
+
 print("a"+"b") # 문자열을 합칠 때 +를 이용한 붙이기
 print("a","b") # 문자열을 합칠 때 +를 이용한 띄어서 붙이기
 
@@ -131,7 +132,7 @@ print(f"나는 {age}살이며, {color}색을 좋아해요.") #이렇게 하면 �
 
 
 
-# 탈줄문자
+### 탈줄문자
 
 print("백문이 불여일견 \n백견이 불여일타") # \n을 사용하면 줄바꿈으로 문자열을 출력한다.
 
