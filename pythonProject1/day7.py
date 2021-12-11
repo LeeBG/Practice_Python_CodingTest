@@ -400,7 +400,7 @@ game_start()
 game_over()
 
 # game_over()은 pass이기 때문에 아무것도 안하고 넘어간다.
-"""
+
 
 
 ### Super
@@ -461,7 +461,44 @@ class BuildingUnit(Unit):
         super.__init__(name,hp,0)  # super=부모클래스,hp,0 슈퍼는 self를 뺴고 __init__을 해주면 된다.
         self.location = location
 
-"""
 
+
+
+
+### Quiz) 주어진 코드를 활용하여 부동산 프로그램을 작성하시오.
+
+# (출력 예제)
+# 총 3대의 매물이 있습니다.
+# 강남 아파트 매매 10억 2010년
+# 마포 오피스텔 전세 5억 2007년
+# 송파 빌라 월세 500/50 2000년
+
+# [코드]
+class House:
+    # 매물 초기화
+    def __init__(self,location,house_type, deal_type,price,completion_year):
+        self.location =location
+        self.house_type = house_type
+        self.deal_type = deal_type
+        self.price = price
+        self.completion_year = completion_year
+
+    # 매물 정보 표시
+    def show_detail(self):
+        print("{0} {1} {2} {3} {4}".format(self.location,self.house_type,self.deal_type,self.price,self.completion_year))
+
+
+h1 = House("강남","아파트","매매","10억","2010년")
+h2 = House("마포","오피스텔","전세","5억","2007년")
+h3 = House("송파","빌라","월세","500/50","2000년")
+
+list_houses = []
+list_houses.append(h1)
+list_houses.append(h2)
+list_houses.append(h3)
+
+print("총 {0}대의 매물이 있습니다.".format(len(list_houses)))
+for house in list_houses:
+    house.show_detail()
 
 """
