@@ -7,7 +7,7 @@ def coin():
 
   coins = [500,100,50,10]
 
-  #Number of coins used the least
+  #Number of coins used the leaste
 
   for coin in coins:
     count += (remains // coin)

@@ -90,7 +90,7 @@ print(5 in cabinet) # 5이 이 사전내에 값이 있는지 확인
 
 cabinet = {"A-3":"유재석","B-100":"김태호"}
 print(cabinet["A-3"])
-print(cabinet["B-100"]) # 키에 해당하는 값들을 잘 출력 없는 키를 요구하면 오류 발생
+print(cabinet["B-100"]) # 키에 해당하는 값들을 잘 출력
 
 # 새 손님
 print(cabinet) # 바뀌기 전
