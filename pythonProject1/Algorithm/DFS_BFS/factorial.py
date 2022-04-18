@@ -6,7 +6,7 @@ def factorial_interative(n):
     return result
 
 
-# 제귀함수로 구현
+# 재귀함수로 구현
 def factorial_recursive(n):
     if n <=1:
         return 1
