@@ -9,6 +9,7 @@ for i in range(1,20):
         a[i][j+1] = int(a[i][j])
 
 n = int(input())
+
 for i in range(n):
     x,y = map(int,input().split())
     for j in range(1,20):
